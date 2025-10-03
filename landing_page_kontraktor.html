@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kontraktor & Desain | [Nama Perusahaan] — Jawa & Bali</title>
+  <meta name="description" content="Kontraktor berpengalaman 10+ tahun. Jasa bangun rumah, desain arsitektur & interior untuk Jawa dan Bali. Konsultasi gratis." />
+  <meta name="keywords" content="kontraktor rumah, desain arsitektur, desain interior, bangun rumah, Jawa, Bali" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Small custom styles */
+    .hero-bg{background-image: url('https://images.unsplash.com/photo-1560184897-6a8b9c2e3b0c?auto=format&fit=crop&w=1600&q=60'); background-size: cover; background-position: center;}
+    .glass{background: rgba(255,255,255,0.8); backdrop-filter: blur(6px);} 
+    .btn-primary{@apply bg-indigo-600 text-white font-semibold py-3 px-5 rounded-lg shadow hover:bg-indigo-700}
+  </style>
+</head>
+<body class="antialiased text-gray-800">
+  <!-- NAV -->
+  <header class="w-full bg-white shadow">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 bg-gray-900 rounded-md flex items-center justify-center text-white font-bold">[LOGO]</div>
+        <div>
+          <h1 class="text-lg font-semibold">[Nama Perusahaan]</h1>
+          <p class="text-sm text-gray-500">Kontraktor • Arsitektur • Interior — Jawa & Bali</p>
+        </div>
+      </div>
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="#services" class="hover:text-indigo-600">Layanan</a>
+        <a href="#portfolio" class="hover:text-indigo-600">Portofolio</a>
+        <a href="#testimonials" class="hover:text-indigo-600">Testimoni</a>
+        <a href="#contact" class="text-white bg-indigo-600 py-2 px-4 rounded-md">Konsultasi Gratis</a>
+      </nav>
+      <div class="md:hidden">
+        <button id="mobileBtn" class="p-2">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero-bg h-[72vh] flex items-center">
+    <div class="max-w-6xl mx-auto px-6 w-full">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <div class="text-white">
+          <div class="inline-block bg-black/40 px-3 py-1 rounded-md text-sm mb-4">10+ Tahun Pengalaman • Jawa & Bali</div>
+          <h2 class="text-4xl md:text-5xl font-extrabold leading-tight mt-4">Mewujudkan Hunian Impian Anda<br class="hidden md:block"/> dengan Desain & Konstruksi Profesional</h2>
+          <p class="mt-4 text-lg text-white/90">Kontraktor berpengalaman untuk pembangunan rumah, desain arsitektur dan interior. Solusi estetis, fungsional, dan tepat anggaran.</p>
+          <div class="mt-6 flex gap-4">
+            <a href="#contact" class="btn-primary">Konsultasi Gratis</a>
+            <a href="#portfolio" class="bg-white/90 text-gray-900 py-3 px-5 rounded-lg font-semibold shadow">Lihat Portofolio</a>
+          </div>
+          <div class="mt-6 flex items-center gap-6 text-sm">
+            <div class="flex items-center gap-3">
+              <div class="w-12 h-12 bg-white/20 rounded flex items-center justify-center font-semibold">🏗️</div>
+              <div>
+                <div class="text-xs text-white/80">Proyek Selesai</div>
+                <div class="text-lg font-bold text-white">500+</div>
+              </div>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-12 h-12 bg-white/20 rounded flex items-center justify-center font-semibold">⭐</div>
+              <div>
+                <div class="text-xs text-white/80">Puas Klien</div>
+                <div class="text-lg font-bold text-white">4.9/5</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hidden md:block">
+          <div class="glass p-4 rounded-xl shadow-xl">
+            <h3 class="text-gray-800 font-semibold text-xl">Dapatkan Estimasi Cepat</h3>
+            <form id="leadForm" class="mt-3 grid gap-3">
+              <input required name="name" placeholder="Nama lengkap" class="border rounded px-3 py-2" />
+              <input required name="phone" placeholder="No. WhatsApp" class="border rounded px-3 py-2" />
+              <input name="location" placeholder="Lokasi proyek (Kota)" class="border rounded px-3 py-2" />
+              <select name="service" class="border rounded px-3 py-2">
+                <option>Kontraktor Bangun Rumah</option>
+                <option>Desain Arsitektur</option>
+                <option>Desain Interior</option>
+                <option>Renovasi & Perbaikan</option>
+              </select>
+              <button type="submit" class="bg-indigo-600 text-white py-2 rounded font-semibold">Kirim & Konsultasi</button>
+              <p class="text-xs text-gray-600">Kami akan menghubungi Anda via WhatsApp untuk konsultasi lebih lanjut.</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- USP -->
+  <section id="services" class="max-w-6xl mx-auto px-6 py-14">
+    <h3 class="text-sm uppercase text-indigo-600 font-semibold">Kenapa Kami</h3>
+    <h2 class="text-3xl font-bold mt-2">Keunggulan Kami</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+      <div class="p-6 border rounded-lg shadow-sm">
+        <h4 class="font-semibold">Berpengalaman 10+ Tahun</h4>
+        <p class="text-sm text-gray-600 mt-2">Tim kami telah menangani ratusan proyek residensial di Jawa dan Bali.</p>
+      </div>
+      <div class="p-6 border rounded-lg shadow-sm">
+        <h4 class="font-semibold">Desain & Fungsi Seimbang</h4>
+        <p class="text-sm text-gray-600 mt-2">Desain yang indah sekaligus nyaman untuk kehidupan sehari-hari.</p>
+      </div>
+      <div class="p-6 border rounded-lg shadow-sm">
+        <h4 class="font-semibold">Harga Transparan</h4>
+        <p class="text-sm text-gray-600 mt-2">Estimasi jelas, breakdown biaya, tanpa biaya tersembunyi.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Layanan Detail -->
+  <section class="bg-gray-50">
+    <div class="max-w-6xl mx-auto px-6 py-14">
+      <h2 class="text-2xl font-bold">Layanan Kami</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
+        <article class="bg-white p-6 rounded-lg shadow">
+          <h3 class="font-semibold text-lg">Kontraktor Bangun Rumah</h3>
+          <p class="text-sm text-gray-600 mt-2">Turnkey construction dari perencanaan, struktur, finishing hingga serah terima kunci.</p>
+          <ul class="mt-3 text-sm text-gray-600 list-disc list-inside">
+            <li>Manajemen proyek</li>
+            <li>Quality control & material terbaik</li>
+            <li>Garansi pekerjaan</li>
+          </ul>
+        </article>
+        <article class="bg-white p-6 rounded-lg shadow">
+          <h3 class="font-semibold text-lg">Desain Arsitektur</h3>
+          <p class="text-sm text-gray-600 mt-2">Konsep arsitektur modern, tropis, atau kustom sesuai lokasi.</p>
+        </article>
+        <article class="bg-white p-6 rounded-lg shadow">
+          <h3 class="font-semibold text-lg">Desain Interior</h3>
+          <p class="text-sm text-gray-600 mt-2">Interior ergonomis, estetis, serta pemilihan material & furnitur.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section id="portfolio" class="max-w-6xl mx-auto px-6 py-14">
+    <h2 class="text-2xl font-bold">Portofolio Terbaru</h2>
+    <p class="text-sm text-gray-600 mt-2">Contoh proyek yang kami kerjakan — klik untuk melihat detail.</p>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+      <!-- Sample cards with placeholder images -->
+      <div class="rounded overflow-hidden shadow-md">
+        <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=1200&q=60" alt="Villa Ubud" class="w-full h-56 object-cover" />
+        <div class="p-4">
+          <h4 class="font-semibold">Villa Minimalis — Ubud, Bali</h4>
+          <p class="text-sm text-gray-600 mt-1">Desain tropis modern, 3 kamar tidur.</p>
+        </div>
+      </div>
+
+      <div class="rounded overflow-hidden shadow-md">
+        <img src="https://images.unsplash.com/photo-1505691723518-36aebc6f0b27?auto=format&fit=crop&w=1200&q=60" alt="Rumah Modern" class="w-full h-56 object-cover" />
+        <div class="p-4">
+          <h4 class="font-semibold">Rumah Modern — Surabaya</h4>
+          <p class="text-sm text-gray-600 mt-1">Rumah keluarga 2 lantai dengan taman belakang.</p>
+        </div>
+      </div>
+
+      <div class="rounded overflow-hidden shadow-md">
+        <img src="https://images.unsplash.com/photo-1490135900316-7c1e3e6a3d89?auto=format&fit=crop&w=1200&q=60" alt="Interior" class="w-full h-56 object-cover" />
+        <div class="p-4">
+          <h4 class="font-semibold">Interior Hunian — Jakarta</h4>
+          <p class="text-sm text-gray-600 mt-1">Renovasi interior minimalis & fungsi maksimal.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials" class="bg-white">
+    <div class="max-w-6xl mx-auto px-6 py-14">
+      <h2 class="text-2xl font-bold">Apa Kata Klien Kami</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
+        <div class="p-4 border rounded">
+          <p class="text-gray-700">"Hasilnya melebihi ekspektasi. Tim profesional, jadwal tepat waktu."</p>
+          <div class="mt-3 font-semibold">— Andika P., Bali</div>
+        </div>
+        <div class="p-4 border rounded">
+          <p class="text-gray-700">"Komunikasi lancar, transparan soal biaya, kualitas bahan bagus."</p>
+          <div class="mt-3 font-semibold">— Rina S., Jakarta</div>
+        </div>
+        <div class="p-4 border rounded">
+          <p class="text-gray-700">"Desain interior sangat fungsional dan estetik. Recommended!"</p>
+          <div class="mt-3 font-semibold">— Budi H., Surabaya</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="max-w-6xl mx-auto px-6 py-14">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div>
+        <h2 class="text-2xl font-bold">Hubungi Kami</h2>
+        <p class="text-sm text-gray-600 mt-2">Konsultasi awal gratis. Kami siap membantu dari perencanaan hingga serah terima.</p>
+        <div class="mt-6 space-y-3 text-sm">
+          <div><strong>Alamat:</strong> Jakarta & Denpasar (kantor operasional)</div>
+          <div><strong>WhatsApp:</strong> <a href="https://wa.me/62812XXXXXXXX" target="_blank" class="text-indigo-600">+62 812-XXXX-XXXX</a></div>
+          <div><strong>Email:</strong> <a href="mailto:info@perusahaan.com" class="text-indigo-600">info@perusahaan.com</a></div>
+          <div><strong>Jam Operasional:</strong> Senin–Sabtu 09.00–17.00 WIB</div>
+        </div>
+      </div>
+      <div>
+        <form class="grid gap-3" action="#" onsubmit="alert('Terima kasih! Kami akan menghubungi Anda.'); return false;">
+          <input placeholder="Nama lengkap" required class="border rounded px-3 py-2" />
+          <input placeholder="No. WhatsApp" required class="border rounded px-3 py-2" />
+          <input placeholder="Lokasi proyek" class="border rounded px-3 py-2" />
+          <textarea placeholder="Deskripsi singkat proyek" rows="4" class="border rounded px-3 py-2"></textarea>
+          <button class="bg-indigo-600 text-white py-2 rounded font-semibold">Kirim Pesan</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-200 py-8">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
+      <div>
+        <div class="font-bold">[Nama Perusahaan]</div>
+        <div class="text-sm">© <span id="year"></span> Semua hak dilindungi.</div>
+      </div>
+      <div class="text-sm"> <a href="#" class="hover:text-white">Kebijakan Privasi</a> • <a href="#" class="hover:text-white">Syarat & Ketentuan</a></div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/62812XXXXXXXX" target="_blank" class="fixed right-5 bottom-5 shadow-lg rounded-full p-4 bg-green-500 text-white" title="Chat via WhatsApp">💬</a>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    // Mobile nav toggle (simple)
+    const mobileBtn = document.getElementById('mobileBtn');
+    mobileBtn && mobileBtn.addEventListener('click', ()=>{
+      alert('Untuk demo: navigasi mobile bisa ditambahkan.');
+    });
+  </script>
+</body>
+</html>
